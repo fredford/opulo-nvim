@@ -22,8 +22,6 @@ local variants = {
 		highlight_high = '#405763',
 		none = 'NONE',
 	},
-#00ff6a
-#ff758e
 	-- moon = {
 	-- 	---@deprecated for backwards compatibility
 	-- 	_experimental_nc = '#1f1d30',
