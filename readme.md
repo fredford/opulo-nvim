@@ -30,6 +30,15 @@ require('packer').startup(function(use)
 end)
 ```
 
+## Palette
+
+- Base: #1D212B
+- Surface: #232A34
+- Overlay: #29333E
+- Text: #9ab8d7
+- Subtle: #92d5e6
+- Muted: #DCDCCC
+
 ## Options
 
 > Options should be set **before** colorscheme
