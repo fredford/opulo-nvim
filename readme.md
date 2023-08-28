@@ -34,13 +34,6 @@ require('packer').startup(function(use)
 end)
 ```
 
-Set the colorscheme:
-
-```lua
-vim.cmd.colorscheme("opulo")
-
-```
-
 ## Palette
 
 If you want to modify the colors, you can do so in `lua/opulo/palette.lua`, the naming is from Rose-Pine and not the actual colors.
@@ -69,7 +62,7 @@ Variant respects `vim.o.background`, using dawn when light and `dark_variant`
 when dark
 
 ```lua
-require('rose-pine').setup({
+require('opulo').setup({
 	--- @usage 'auto'|'main'|'moon'|'dawn'
 	variant = 'auto',
 	--- @usage 'main'|'moon'|'dawn'
