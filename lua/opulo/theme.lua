@@ -2,8 +2,8 @@ local M = {}
 
 ---@param options Options
 function M._load(options)
-	local h = require('rose-pine.util').highlight
-	local p = require('rose-pine.palette')
+	local h = require('opulo.util').highlight
+	local p = require('opulo.palette')
 
 	local groups = options.groups or {}
 	local maybe = {
@@ -156,7 +156,11 @@ function M._load(options)
 		['markdownH5Delimiter'] = { link = 'markdownH5' },
 		['markdownH6'] = { fg = groups.headings.h6, bold = true },
 		['markdownH6Delimiter'] = { link = 'markdownH6' },
-		['markdownLinkText'] = { fg = groups.link, sp = groups.link, underline = true },
+		['markdownLinkText'] = {
+			fg = groups.link,
+			sp = groups.link,
+			underline = true,
+		},
 		['markdownUrl'] = { link = 'markdownLinkText' },
 
 		['mkdCode'] = { fg = p.foam, italic = maybe.italic },
@@ -276,7 +280,9 @@ function M._load(options)
 		['@lsp.type.property'] = { link = '@property' },
 		['@lsp.type.variable'] = {}, -- use treesitter styles for regular variables
 		['@lsp.typemod.function.defaultLibrary'] = { link = 'Special' },
-		['@lsp.typemod.variable.defaultLibrary'] = { link = '@variable.builtin' },
+		['@lsp.typemod.variable.defaultLibrary'] = {
+			link = '@variable.builtin',
+		},
 
 		-- LSP Injected Groups
 		['@lsp.typemod.operator.injected'] = { link = '@operator' },
@@ -317,7 +323,10 @@ function M._load(options)
 		['BufferInactiveMod'] = { fg = p.foam },
 		['BufferInactiveSign'] = { fg = p.muted },
 		['BufferInactiveTarget'] = { fg = p.gold },
-		['BufferTabpageFill'] = { fg = groups.background, bg = groups.background },
+		['BufferTabpageFill'] = {
+			fg = groups.background,
+			bg = groups.background,
+		},
 		['BufferVisible'] = { fg = p.subtle },
 		['BufferVisibleIndex'] = { fg = p.subtle },
 		['BufferVisibleMod'] = { fg = p.foam },
@@ -384,7 +393,10 @@ function M._load(options)
 		-- luka-reineke/indent-blankline.nvim
 		['IndentBlanklineChar'] = { fg = p.muted, nocombine = true },
 		['IndentBlanklineSpaceChar'] = { fg = p.muted, nocombine = true },
-		['IndentBlanklineSpaceCharBlankline'] = { fg = p.muted, nocombine = true },
+		['IndentBlanklineSpaceCharBlankline'] = {
+			fg = p.muted,
+			nocombine = true,
+		},
 
 		-- hrsh7th/nvim-cmp
 		['CmpItemAbbr'] = { fg = p.subtle },

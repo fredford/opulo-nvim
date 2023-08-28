@@ -1,4 +1,4 @@
-local config = require('rose-pine.config')
+local config = require('opulo.config')
 local M = {}
 
 ---@param variant Variant|nil
@@ -10,9 +10,9 @@ function M.colorscheme(variant)
 		vim.cmd('hi clear')
 		vim.cmd('syntax reset')
 	end
-	vim.g.colors_name = 'rose-pine'
+	vim.g.colors_name = 'opulo'
 
-	require('rose-pine.theme')._load(config.options)
+	require('opulo.theme')._load(config.options)
 end
 
 function M.setup(options)

@@ -1,4 +1,4 @@
-local options = require('rose-pine.config').options
+local options = require('opulo.config').options
 
 local variants = {
 	main = {
