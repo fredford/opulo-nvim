@@ -4,6 +4,10 @@
 
 <p align="center">Colors to protect your sanity while debugging</p>
 
+## Description
+
+This was a fork of the [Rose-Pine neovim theme](https://github.com/rose-pine/neovim), using the colors from the [Opulo theme](https://github.com/notjek1/opulo) to help blend into a more vibrant mix of the two.
+
 ## Install
 
 **[Paq](https://github.com/savq/paq-nvim)**
@@ -30,14 +34,32 @@ require('packer').startup(function(use)
 end)
 ```
 
+Set the colorscheme:
+
+```lua
+vim.cmd.colorscheme("opulo")
+
+```
+
 ## Palette
+
+If you want to modify the colors, you can do so in `lua/opulo/palette.lua`, the naming is from Rose-Pine and not the actual colors.
 
 - Base: #1D212B
 - Surface: #232A34
 - Overlay: #29333E
-- Text: #9ab8d7
-- Subtle: #92d5e6
+- Text: #9AB8D7
+- Subtle: #92D5E6
 - Muted: #DCDCCC
+- Love: #FF97B1
+- Gold: #DCA3A3
+- Rose: #DCDCCC
+- Pine: #FF758E
+- Foam: #60B48A
+- Iris: #BD91FF
+- Highlight_Low: #232A34
+- Highlight_Mid: #2F3C47
+- Highlight_High: #405763
 
 ## Options
 
@@ -108,7 +130,7 @@ vim.cmd('colorscheme opulo')
 
 ## Contributing
 
-We welcome and appreciate any help in creating a lovely experience for all.
+We welcome and appreciate any help in creating a lovely experience for all. If you want to change it or improve the theme feel free to make changes and submit a PR.
 
 - Get highlight groups under cursor via `:Inspect` in Neovim 0.9 or
   [nvim-treesitter/playground](https://github.com/nvim-treesitter/playground#show-treesitter-and-syntax-highlight-groups-under-the-cursor)
