@@ -12,9 +12,9 @@ local variants = {
 		subtle = '#92D5E6',
 		text = '#9ab8d7',
 		love = '#ff97b1',
-		gold = '#ff758e',
+		gold = '#DCDCCC',
 		rose = '#dca3a3',
-		pine = '#00ff6a',
+		pine = '#ff758e',
 		foam = '#60b48a',
 		iris = '#bd91ff',
 		highlight_low = '#232a34',
@@ -22,6 +22,8 @@ local variants = {
 		highlight_high = '#405763',
 		none = 'NONE',
 	},
+#00ff6a
+#ff758e
 	-- moon = {
 	-- 	---@deprecated for backwards compatibility
 	-- 	_experimental_nc = '#1f1d30',
